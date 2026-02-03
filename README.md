@@ -33,4 +33,4 @@ Cartoon character assistant
 Reward points system
 Parental control options
 
-This project is perfect for learning how to build interactive applications with a focus on user-friendly design for kids.
+This project is perfect for learning how to build interactive applications with a focus on user-friendly design for kids.This project is developed App this using Full Stack Development.
