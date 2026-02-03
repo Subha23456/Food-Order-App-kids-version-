@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Failed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>😔 Order Failed!</header>
+
+<div class="result">
+    <h2 id="foodName"></h2>
+    <p>🔁 Please order again</p>
+    <p>📞 Ask Mom or Dad for help and call support +91 9456 2359 78</p>
+    <p>🎁 Sorry! Get a free ice cream next time</p>
+    <a href="index.html"><button>Go Back to Menu</button></a>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const food = params.get("food") || "Your food";
+const qty = params.get("qty") || 1;
+document.getElementById("foodName").innerText = `${qty} ${food} did not arrive!`;
+</script>
+</body>
+</html>

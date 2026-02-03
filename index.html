@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kids Food Order App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>🍕 Kids Food Order App</header>
+<p class="tagline">Choose your yummy food 😋</p>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="image/milk.jpeg" alt="Milk">
+        <h3>Milk</h3>
+        <p>₹60</p>
+        Quantity: <input type="number" id="MilkPowderQty" value="1" min="1" max="20">
+        <button onclick="orderFood('Milk Powder')">Order</button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/burger.jpeg" alt="Burger">
+        <h3>Burger</h3>
+        <p>₹80</p>
+        Quantity: <input type="number" id="BurgerQty" value="1" min="1" max="20">
+        <button onclick="orderFood('Burger')">Order</button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/bread.jpeg" alt="Bread">
+        <h3>Bread</h3>
+        <p>₹50</p>
+        Quantity: <input type="number" id="BreadQty" value="1" min="1" max="20">
+        <button onclick="orderFood('Bread')">Order</button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/ice_cream.jpeg" alt="Ice Cream">
+        <h3>Ice Cream</h3>
+        <p>₹60</p>
+        Quantity: <input type="number" id="IceCreamQty" value="1" min="1" max="20">
+        <button onclick="orderFood('Ice Cream')">Order</button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/lemon.png" alt="Lemon Rice">
+        <h3>Lemon Rice</h3>
+        <p>₹80</p>
+        Quantity: <input type="number" id="LemonRiceQty" value="1" min="1" max="20">
+        <button onclick="orderFood('Lemon Rice')">Order</button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/cornflakes.jpeg" alt="Cornflakes">
+        <h3>Cornflakes</h3>
+        <p>₹50</p>
+        Quantity: <input type="number" id="CornflakesQty" value="1" min="1" max="20">
+        <button onclick="orderFood('Cornflakes')">Order</button>
+    </div>
+
+    <div class="food-card">
+        <img src="image/vegetable_rice.jpeg" alt="Vegetable Rice">
+        <h3>Vegetable Rice</h3>
+        <p>₹40</p>
+        Quantity: <input type="number" id="VegetableRiceQty" value="1" min="1" max="20">
+        <button onclick="orderFood('Vegetable Rice')">Order</button>
+    </div>
+    <div class="food-card">
+        <img src="image/juice.png" alt="Apple Juice">
+        <h3>Apple Juice</h3>
+        <p>₹30</p>
+        <input type="number" min="1" value="1" id="qty-apple">
+        <button onclick="orderFood('Apple Juice', document.getElementById('qty-apple').value)">Order</button>
+    </div>
+    <div class="food-card">
+        <img src="image/cake.png" alt="Cake">
+        <h3>Cake</h3>
+        <p>₹70</p>
+        <input type="number" min="1" value="1" id="qty-cake">
+        <button onclick="orderFood('Cake', document.getElementById('qty-cake').value)">Order</button>
+    </div>
+    <div class="food-card">
+        <img src="image/chocolate.png" alt="Chocolate">
+        <h3>Chocolate</h3>
+        <p>₹25</p>
+        <input type="number" min="1" value="1" id="qty-choco">
+        <button onclick="orderFood('Chocolate', document.getElementById('qty-choco').value)">Order</button>
+    </div>
+    <div class="food-card">
+        <img src="image/sandwitch.png" alt="Sandwich">
+        <h3>Sandwich</h3>
+        <p>₹40</p>
+        <input type="number" min="1" value="1" id="qty-sandwich">
+        <button onclick="orderFood('Sandwich', document.getElementById('qty-sandwich').value)">Order</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

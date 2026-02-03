@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Successful</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>✅ Order Delivered!</header>
+
+<div class="result">
+    <h2 id="foodName"></h2>
+    <p>😋 Enjoy your meal!</p>
+    <a href="index.html"><button>Go Back to Menu</button></a>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const food = params.get("food") || "Your food";
+const qty = params.get("qty") || 1;
+document.getElementById("foodName").innerText = `Yay! ${qty} ${food} has arrived!`;
+</script>
+</body>
+</html>

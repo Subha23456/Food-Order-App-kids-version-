@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    background-image: url('image/back.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background: #fc8019;
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tagline {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-card {
+    background: rgba(0,0,0,0.6);
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+}
+
+.food-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-card h3, 
+.food-card p {
+    color: white;
+}
+
+.food-card input {
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.food-card button {
+    background: #60b246;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.result {
+    margin-top: 50px;
+}
+
+.result h2,
+.result p {
+    color: white;
+}
+
+.result button {
+    background: #fc8019;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
